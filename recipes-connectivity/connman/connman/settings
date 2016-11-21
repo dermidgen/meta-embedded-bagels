@@ -1,0 +1,11 @@
+[Wired]
+Enable=true
+
+[WiFi]
+Enable=true
+Tethering=true
+Tethering.Identifier=hiphonix
+Tethering.Passphrase=hiphonix
+
+[Tethering]
+Enable=true
