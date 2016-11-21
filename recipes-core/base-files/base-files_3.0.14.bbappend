@@ -1,4 +1,4 @@
-hostname="hiphonix"
+hostname="embedded-bagels"
 
 # Angstrom reverts yocto fix for setting hostname.
 # It uses ${MACHINE} instead.

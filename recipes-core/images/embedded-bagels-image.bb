@@ -1,4 +1,4 @@
-SUMMARY = "The hiphonix player product image."
+SUMMARY = "The embedded-bagels player product image."
 
 IMAGE_INSTALL += " \
     alsa-utils \
@@ -16,14 +16,14 @@ IMAGE_INSTALL += " \
     mpd \
     udev-extra-rules \
     shairport-sync \
-    hiphonix \
+    embedded-bagels \
 "
 
 LICENSE = "MIT"
 
 #create the deployment directory-tree
 PV = "V1.0"
-IMAGE_NAME = "${MACHINE}_hiphonix"
+IMAGE_NAME = "${MACHINE}_embedded-bagels"
 require recipes-images/angstrom/systemd-image.bb
 
 # IMAGE_ROOTFS_EXTRA_SPACE = "2000"
