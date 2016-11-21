@@ -12,6 +12,21 @@ fi
 echo ""
 echo "Embedded Bagels targets are:"
 echo "    embedded-bagels-image"
+echo ""
+echo "Supported MACHINEs"
+echo "    MACHINE ??= \"at91sam9rlek\""
+echo "    MACHINE ??= \"at91sam9m10g45ek\""
+echo "    MACHINE ??= \"at91sam9x5ek\""
+echo "    MACHINE ??= \"sama5d3xek\""
+echo "    MACHINE ??= \"sama5d3-xplained\""
+echo "    MACHINE ??= \"sama5d4ek\""
+echo "    MACHINE ??= \"sama5d4-xplained\""
+echo "    MACHINE ??= \"raspberrypi2\""
+echo ""
+echo "Usage:"
+echo "    MACHINE=sama5d4-xplained bitbake atmel-qt5-demo-image"
+echo "    MACHINE=sama5d4-xplained bitbake embedded-bagels-image"
+echo ""
 
 if [ $FIRST_TIME -eq 1 ]; then
 	mkdir -p conf
