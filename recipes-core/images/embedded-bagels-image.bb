@@ -6,7 +6,6 @@ IMAGE_INSTALL += " \
     hostapd \
     iperf3 \
     openssl \
-    udev-extra-rules \
     embedded-bagels \
 "
 
