@@ -9,7 +9,7 @@ SYSTEMD_AUTO_ENABLE_${PN} = "disable"
 do_install_append() {
         if [ -e ${D}${sysconfdir}/hostapd.conf ] ; then
                 sed -i -e 's|# driver=hostap|driver=nl80211|' \
-                    -e 's|ssid=test|ssid=hiphonix|' \
+                    -e 's|ssid=test|ssid=embedded-bagels|' \
                     ${D}${sysconfdir}/hostapd.conf
         fi
 

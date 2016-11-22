@@ -1,21 +1,12 @@
 SUMMARY = "The embedded-bagels player product image."
 
 IMAGE_INSTALL += " \
-    alsa-utils \
     crda \
     dnsmasq \
-    lame \
-    ffmpeg \
     hostapd \
     iperf3 \
     openssl \
-    libmpdclient \
-    linux-firmware-ralink \
-    linux-firmware-rtl8192cu \
-    mpc \
-    mpd \
     udev-extra-rules \
-    shairport-sync \
     embedded-bagels \
 "
 
