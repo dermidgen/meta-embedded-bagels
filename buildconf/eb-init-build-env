@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 FIRST_TIME=0
 
@@ -30,7 +30,7 @@ echo ""
 
 if [ $FIRST_TIME -eq 1 ]; then
 	mkdir -p conf
-	cp ../sources/meta-embedded-bagels/buildconf/*.conf conf/
+	cp ../../sources/meta-embedded-bagels/buildconf/*.conf conf/
 
 	echo ""
 	$ECHO -e "\033[1mA sample conf/local.conf file has been created"
