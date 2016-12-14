@@ -4,11 +4,9 @@ FIRST_TIME=0
 
 cd sources/poky/
 
-if [ ! -f ${BUILDDIR}/conf/local.conf ]; then
-  FIRST_TIME=1
-fi
-
 source oe-init-build-env build-atmel
+
+cp ../../sources/meta-embedded-bagels/buildconf/*.conf conf/
 
 echo ""
 echo "Embedded Bagels targets are:"
@@ -27,14 +25,3 @@ echo "Usage:"
 echo "    MACHINE=sama5d4-xplained bitbake atmel-qt5-demo-image"
 echo "    MACHINE=sama5d4-xplained bitbake embedded-bagels-image"
 echo ""
-
-if [ $FIRST_TIME -eq 1 ]; then
-	mkdir -p conf
-	cp ../../sources/meta-embedded-bagels/buildconf/*.conf conf/
-
-	echo ""
-	$ECHO -e "\033[1mA sample conf/local.conf file has been created"
-	$ECHO -e "Check and edit the file to adapt to your local needs\033[0m"
-	echo "The following likely need your attention:"
-	echo "BB_NUMBER_THREADS, PARALLEL_MAKE, DL_DIR"
-fi
