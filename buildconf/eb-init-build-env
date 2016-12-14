@@ -6,6 +6,9 @@ cd sources/poky/
 
 source oe-init-build-env build-atmel
 
+pwd
+ls -la
+
 cp ../../sources/meta-embedded-bagels/buildconf/*.conf conf/
 
 echo ""
