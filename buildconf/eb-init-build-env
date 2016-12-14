@@ -1,12 +1,10 @@
 #!/bin/bash
 
-FIRST_TIME=0
-
-cd sources/poky/
+cd poky
 
 source oe-init-build-env build-atmel
 
-cp ../../../sources/meta-embedded-bagels/buildconf/*.conf conf/
+cp ../../../meta-embedded-bagels/buildconf/*.conf conf/
 
 echo ""
 echo "Embedded Bagels targets are:"
