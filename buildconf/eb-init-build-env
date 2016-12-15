@@ -7,7 +7,7 @@ pwd
 source oe-init-build-env build-atmel
 
 pwd
-cp ../../../meta-embedded-bagels/buildconf/*.conf conf/
+cp ../../meta-embedded-bagels/buildconf/*.conf conf/
 
 echo ""
 echo "Embedded Bagels targets are:"
