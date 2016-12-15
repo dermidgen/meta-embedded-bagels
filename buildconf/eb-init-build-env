@@ -1,9 +1,12 @@
 #!/bin/bash
 
+pwd
 cd poky
 
+pwd
 source oe-init-build-env build-atmel
 
+pwd
 cp ../../../meta-embedded-bagels/buildconf/*.conf conf/
 
 echo ""
