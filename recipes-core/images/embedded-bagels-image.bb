@@ -2,7 +2,7 @@ SUMMARY = "Embedded Bagels Demo Image"
 LICENSE = "MIT"
 
 PV = "V1.0"
-IMAGE_NAME = "${MACHINE}_embedded-bagels"
+IMAGE_NAME = "embedded-bagels-image-${MACHINE}"
 
 IMAGE_FEATURES += "ssh-server-openssh package-management"
 
