@@ -32,8 +32,20 @@ IMAGE_INSTALL += "\
     mtd-utils-ubifs \
     dtc \
     dtc-misc \
+    \
     iproute2 \
     iptables \
+    \
+    kernel-module-x-tables \
+    kernel-module-ip-tables \
+    kernel-module-iptable-filter \
+    kernel-module-iptable-nat \
+    kernel-module-nf-defrag-ipv4 \
+    kernel-module-nf-conntrack \
+    kernel-module-nf-conntrack-ipv4 \
+    kernel-module-nf-nat \
+    kernel-module-ipt-masquerade \
+    \
     bridge-utils \
     canutils \
     evtest \
