@@ -46,6 +46,9 @@ IMAGE_INSTALL += "\
     gdbserver \
     usbutils \
     wget \
+    \
+    packagegroup-base-usbhost \
+    mpg123 \
     ${CORE_IMAGE_EXTRA_INSTALL} \
 "
 
