@@ -46,13 +46,13 @@ IMAGE_INSTALL += "\
 "
 
 # Removed packages
-#    python-pyserial \
-#    python-smbus \
-#    python-ctypes \
-#    python-pip \
-#    python-distribute \
-#    python-pycurl \
-#    mpg123 \
+#    python-pyserial
+#    python-smbus
+#    python-ctypes
+#    python-pip
+#    python-distribute
+#    python-pycurl
+#    mpg123
 
 
 inherit core-image
