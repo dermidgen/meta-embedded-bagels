@@ -42,6 +42,8 @@ IMAGE_INSTALL += "\
     wget \
     \
     packagegroup-base-usbhost \
+    \
+    docker \
     ${CORE_IMAGE_EXTRA_INSTALL} \
 "
 
