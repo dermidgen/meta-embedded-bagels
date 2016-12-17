@@ -37,19 +37,22 @@ IMAGE_INSTALL += "\
     bridge-utils \
     canutils \
     evtest \
-    python-pyserial \
-    python-smbus \
-    python-ctypes \
-    python-pip \
-    python-distribute \
-    python-pycurl \
     gdbserver \
     usbutils \
     wget \
     \
     packagegroup-base-usbhost \
-    mpg123 \
     ${CORE_IMAGE_EXTRA_INSTALL} \
 "
+
+# Removed packages
+#    python-pyserial \
+#    python-smbus \
+#    python-ctypes \
+#    python-pip \
+#    python-distribute \
+#    python-pycurl \
+#    mpg123 \
+
 
 inherit core-image
