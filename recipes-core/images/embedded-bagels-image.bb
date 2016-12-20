@@ -6,6 +6,9 @@ IMAGE_NAME = "embedded-bagels-image-${MACHINE}"
 
 IMAGE_FEATURES += "ssh-server-openssh package-management"
 
+DEPENDS_${PN} += " kernel-module-dm-thin-pool kernel-module-nf-nat"
+DEPENDS_${PN} += " curl aufs-util git cgroup-lite util-linux iptables"
+
 IMAGE_INSTALL += "\
     packagegroup-core-boot \
     packagegroup-core-full-cmdline \
